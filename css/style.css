@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Rancho');
+
+
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #f3f3f3;
+  color: #010101;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  font-weight: 100;
+
+}
+
+h1{
+	font-size: 4rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h2 a{
+  font-family: 'Rancho', san-serif;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #010101;
+  transition: 0.5s;
+}
+
+h2 a:hover{
+  color: #4f4f4f;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
+p{
+	font-size: 1rem;
+}
+
+#showcase{
+  margin: 0;
+  padding: 0 5vw;
+  background: url(../img/new-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: middle center;
+  overflow: hidden;
+}
+
+.nested i{
+  margin-right: 20px;
+}
+
+button{
+  margin: 25px 0 30px 0;
+  background: transparent;
+  border-radius: 25px;
+  padding: 15px 45px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+}
+
+
+/* Navigation Bar */
+
+.menu {
+  top: 2em;
+  right: 1.5em;
+  position: absolute;
+  background: white;
+  width: 3em;
+  height: 3em;
+  border-radius: 5em;
+  cursor: pointer;
+}
+
+.menu:after {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 1em;
+  height: 0.2em;
+  border-top: 0.6em double #4f4f4f;
+  border-bottom: 0.2em solid #4f4f4f;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  float: right;
+  position: relative;
+  top: -1em; 
+  width: 6em;
+  height: 1.4em;
+  padding: 0.5em;
+  margin: 0.2em;
+  margin-right: 60px;
+  text-align: center;
+  border-radius: 25px;
+  transition: all 0.6s;
+  background: #4f4f4f;
+  opacity: 0;
+  z-index: 10;
+}
+
+.menu:hover li{
+  opacity: 1;
+}
+
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+
+.menu li:hover {
+  background: #f3f3f3;
+  z-index: 10;
+}
+.menu li:hover a{
+  color: #4f4f4f;
+}
+
+
+
+/* Flex Box */
+.flex-container{
+ /* margin-top: 10vh;*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+
+.profile {
+    flex: 3;
+    background-color: #c1e2e7;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.main {
+    flex: 8;
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Side Profile */
+.profile ul{
+  display: flex;
+  padding: 0;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+
+}
+
+.profile li{
+  list-style: none;
+}
+
+.profile li a{
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  background: #fff;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.profile li a .fab{
+  position: relative;
+  color: #010101;
+  transition: .5s;
+}
+
+.profile li a:hover .fab{
+  transform: rotateY(360deg);
+}
+
+.download button{
+  border: 2px solid #010101;
+  color: #010101;
+  transition: .5s;
+}
+
+.download button:hover{
+  background: #010101;
+  color: #fff;
+}
+
+
+/* Main Information */
+.container, .container2{
+  border-bottom: 2px solid #e7e7e7;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.container h3, .container2 h3{
+  color: #4f4f4f;
+}
+
+.nested{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nested2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+/* About info */
+.container button{
+  border: 2px solid #c1e2e7;
+  margin-bottom: 0; 
+}
+
+
+/*  Personal Info  */
+.per-info .nested{
+  flex-wrap: nowrap;
+}
+
+.nested .flex1{
+  flex: 1;
+  min-width: 120px;
+}
+
+.nested .flex2{
+  flex: 2;
+  padding-left: 10px;
+}
+
+
+/* Education */
+.flex3{
+  align-self: flex-end;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+
+
+/* Experiences */
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #c1e2e7;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4f4f4f;
+    cursor: pointer;
+}
+
+#experiences #work{
+  font-weight: bold;
+}
+
+.work-info{
+  flex: 2;
+  min-width: 250px;
+}
+
+.work-pic{
+  flex: 1;
+  min-width: 250px;
+}
+
+#imageid{
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* Skills */
+.web-design, .coding{
+  flex: 1;
+  min-width: 250px;
+}
+
+.progress-bar{
+  margin: 30px 0;
+  padding-right: 30px;
+}
+
+.progress-bar span{
+  float: right;
+}
+
+.progress-bar-skills{
+    position: relative;
+    width: 100%;
+    background-color: #c1e2e7;
+    border-radius: 12px;
+}
+
+.progress-bar .progress-bar-line {
+    position: relative;
+    width: 5%;
+    height: 6px;
+    background-color: #4f4f4f;
+    border-radius: 12px;
+}
+
+/* Interests */
+#interests .nested > div{
+  flex: 1;
+  text-align: center;
+  margin: 0 20px;
+}
+
+
+#interests .nested i{
+  margin: 0;
+  padding: 20px;
+  background: transparent;
+  border: 2px #c1e2e7 solid;
+  border-radius: 50%;
+}
+
+
+/* Contact */
+#contact h3{
+  color: #4f4f4f;
+}
+
+#contact form{
+  padding: 1rem 4rem 1rem 2.4rem;
+}
+
+#contact form input, #contact form textarea{
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  background: #f3f3f3;
+  border: none;
+  border-radius: 6px;
+}
+
+#contact form input:focus, #contact form textarea:focus{
+  outline: none;
+  border: 1.5px #c1e2e7 solid;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #c1e2e7;
+
+}
+
+#contact form button{
+  border: 2px solid #c1e2e7;
+  transition: .6s ease-out;
+  margin: 0;
+}
+
+#contact form button:hover, #contact form button:focus{
+  background: #c1e2e7;
+  color: #4f4f4f;
+}
+
+#contact iframe{
+  padding-bottom: 30px;
+}
+
+.footer{
+  margin: 30px 30% 0 30%;
+  text-align: center;
+  padding-top: 30px;
+  border-top: 2px solid #e7e7e7;
+}
