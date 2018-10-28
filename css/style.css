@@ -12,31 +12,30 @@ body {
   line-height: 1.5;
   letter-spacing: 0.8px;
   font-weight: 100;
-
 }
 
 h2{
-  font-size: 30px;
+  font-size: 2rem;
 }
 
-h1 a{
+h2 a{
   font-family: 'Rancho', san-serif;
-  font-size: 48px;
+  font-size: 3rem;
   text-decoration: none;
   color: #010101;
   transition: 0.5s;
 }
 
-h1 a:hover{
+h2 a:hover{
   color: #4f4f4f;
 }
 
 h3{
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 p{
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 #showcase{
@@ -60,7 +59,7 @@ button{
   padding: 15px 45px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem;
   letter-spacing: 0.8px;
 }
 
