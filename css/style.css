@@ -15,12 +15,12 @@ body {
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 h2 a{
   font-family: 'Rancho', san-serif;
-  font-size: 3rem;
+  font-size: 1.5em;
   text-decoration: none;
   color: #010101;
   transition: 0.5s;
@@ -31,11 +31,11 @@ h2 a:hover{
 }
 
 h3{
-	font-size: 1.5rem;
+	font-size: 1.6em;
 }
 
 p{
-	font-size: 1rem;
+	font-size: 1em;
 }
 
 #showcase{
@@ -59,7 +59,7 @@ button{
   padding: 15px 45px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1em;
   letter-spacing: 0.8px;
 }
 
@@ -67,7 +67,7 @@ button{
 /* Navigation Bar */
 
 .menu {
-  top: 2em;
+  top: 2.2em;
   right: 1.5em;
   position: absolute;
   background: white;
