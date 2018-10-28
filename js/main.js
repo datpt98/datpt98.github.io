@@ -26,7 +26,7 @@
     }else{
       document.getElementById("work").innerHTML = "Freelancer (Kouvola)";
       document.getElementById("year").innerHTML = "09.2018 – Now";  
-      document.getElementById("description").innerHTML = "I am currently unemployed. That is why I need you to hire me";
+      document.getElementById("description").innerHTML = "I am currently a freelancer who is learning to code. Although I haven't had many prior experiences in regards to web-developing category, I am always willing to learn and hone my skills even further, even in whatever position I am given.";
       document.getElementById("imageid").src= "./img/job4.png"
 
     }

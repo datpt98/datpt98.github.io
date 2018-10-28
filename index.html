@@ -14,7 +14,7 @@
 <body>
 	<!-- Showcase & Nav -->
 	<div id="showcase">
-		<h2><b><a href="index.html">Curriculum Vitae</a></b></h2>
+		<h1><b><a href="index.html">Curriculum Vitae</a></b></h1>
 		<nav class='menu'>
 			<ul>
 				<li>
@@ -54,7 +54,8 @@
 				</ul>
 					
 				<div class="download">
-					<button> DOWNLOAD RESUME</button>
+					<a href="CV.pdf" download target="blank">
+					<button> DOWNLOAD RESUME</button></a>
 				</div>
 			</div>
 
@@ -68,7 +69,6 @@
 						<h2>ABOUT ME</h2>
 						<p><b>Hello, I'm Dat Pham!</b></p>
 						<p>I am 19 years old and I’m from Vietnam. I am currently studying at South-Eastern University of Applied Sciences, Kouvola campus. I am a hardworking, passionate and sincere individual. I can get used to different working environments and I am always eager to explore new experiences. </p>
-						<button>SHARE</button>
 					</div>
 
 
@@ -272,7 +272,7 @@
 
 				<div id="contact">
 					<h3>contact</h3>
-					<form>
+					<form action="contactform.php" method="post">
 						<p>
 							<label>Your Name (required)</label>
 							<input type="text" name="name" required>
@@ -290,7 +290,7 @@
 							<textarea name="message" rows="5"></textarea>
 						</p>				
 						<p>
-							<button>Send</button>
+							<button type="submit" name="submit">Send</button>
 						</p>
 					</form>
 
